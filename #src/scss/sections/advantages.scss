@@ -1,0 +1,25 @@
+.advantages {
+    padding-bottom: 91px;
+    padding-top: 41px;
+    &__title {
+        text-align: center;
+        margin-bottom: 55px;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 26px;
+        row-gap: 50px;
+        margin-bottom: 87px;
+        li {
+            span {
+                display: block;
+                margin-top: 21px;
+                margin-bottom: 26px;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 100%;
+            }
+        }
+    }
+}

@@ -1,9 +1,6 @@
 @import 'fonts';
 @import 'null';
 
-body {
-    font-family: 'Noto Sans', sans-serif;
-}
 body.lock {
     overflow: hidden !important;
 }
@@ -11,10 +8,46 @@ html {
     scroll-behavior: smooth;
 }
 .container {
-    max-width: 1240px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
+}
+.title {
+    font-size: 50px;
+    line-height: 100%;
+    font-weight: 700;
+    color: #12234a;
+}
+.text {
+    font-size: 18px;
+    line-height: 100%;
+    color: #12234a;
+}
+.big-text {
+    font-size: 24px;
+    line-height: 100%;
+    color: #12234a;
+}
+.btn {
+    font-size: 24px;
+    line-height: 100%;
+    color: white;
+    font-weight: 700;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    span {
+        padding: 32px 92px;
+        background-color: #0084ff;
+        border-radius: 60px;
+        display: inline-block;
+    }
+    padding: 19px 25px;
+    border-radius: 60px;
+    background-color: #9ccfff;
 }
 
 @import './sections/header';
+@import './sections/new-opportunities';
+@import './sections/advantages';
 @import './sections/footer';
