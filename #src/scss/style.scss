@@ -1,0 +1,20 @@
+@import 'fonts';
+@import 'null';
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+body.lock {
+    overflow: hidden !important;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@import './sections/header';
+@import './sections/footer';
