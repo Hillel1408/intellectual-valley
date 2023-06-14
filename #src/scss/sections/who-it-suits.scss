@@ -1,0 +1,41 @@
+.who-it-suits {
+    padding-top: 75px;
+    padding-bottom: 108px;
+    &__title {
+        text-align: center;
+        margin-bottom: 89px;
+    }
+    &-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 61px;
+        & > div {
+            background-color: #009aff;
+            padding: 30px 30px 50px 30px;
+            border-radius: 10px;
+            p {
+                color: white;
+                margin-top: 16px;
+            }
+            span {
+                display: block;
+                margin-top: 20px;
+                font-size: 20px;
+                line-height: 100%;
+                font-weight: 700;
+                color: white;
+            }
+        }
+        & > div:nth-child(2n) {
+            background-color: white;
+            border: 1px solid #c2c2c2;
+            p {
+                color: #12234a;
+            }
+            span {
+                color: #12234a;
+            }
+        }
+    }
+}

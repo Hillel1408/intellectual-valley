@@ -1,6 +1,10 @@
 .new-opportunities {
     padding-top: 90px;
     padding-bottom: 82px;
+    &__title {
+        text-align: center;
+        margin-bottom: 90px;
+    }
     &-grid {
         gap: 147px;
         display: grid;

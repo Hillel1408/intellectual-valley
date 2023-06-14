@@ -1,0 +1,34 @@
+.why-us {
+    padding-bottom: 75px;
+    padding-top: 28px;
+    &__title {
+        text-align: center;
+    }
+    &-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 57px;
+        & > div {
+            text-align: center;
+            p {
+                font-size: 20px;
+                line-height: 100%;
+                font-weight: 700;
+                text-transform: uppercase;
+                max-width: 320px;
+                margin: 0 auto;
+                span {
+                    color: #0085ff;
+                }
+            }
+        }
+    }
+    &-img {
+        height: 173px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}

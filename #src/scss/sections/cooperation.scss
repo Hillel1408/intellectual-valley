@@ -1,0 +1,26 @@
+.cooperation {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &-block {
+        padding: 71px 98px 64px 98px;
+        border-radius: 15px;
+        background-image: url('../img/bg-3.png');
+        background-size: cover;
+        background-position: right;
+        h3 {
+            font-size: 30px;
+            line-height: 40px;
+            color: white;
+            margin-bottom: 45px;
+        }
+        a {
+            font-size: 24px;
+            line-height: 100%;
+            color: white;
+            display: inline-block;
+            padding: 19px 54px;
+            border: 2px solid white;
+            border-radius: 35px;
+        }
+    }
+}
