@@ -16,7 +16,28 @@
         @media (max-width: 580px) {
             grid-template-columns: 1fr;
         }
+
         & > div {
+            background-size: cover;
+            background-position: center;
+            &:nth-child(1) {
+                background-image: url('../img/bg-6.png');
+            }
+            &:nth-child(2) {
+                background-image: url('../img/bg-7.png');
+            }
+            &:nth-child(3) {
+                background-image: url('../img/bg-8.png');
+            }
+            &:nth-child(4) {
+                background-image: url('../img/bg-9.png');
+            }
+            &:nth-child(5) {
+                background-image: url('../img/bg-10.png');
+            }
+            &:nth-child(6) {
+                background-image: url('../img/bg-11.png');
+            }
             background-color: #009aff;
             padding: 30px 30px 50px 30px;
             border-radius: 10px;
