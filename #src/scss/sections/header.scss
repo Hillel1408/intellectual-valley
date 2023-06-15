@@ -1,6 +1,16 @@
 .header {
+    @media (max-width: 620px) {
+        padding-top: 13px;
+    }
     &__logo {
         padding-top: 13px;
+        @media (max-width: 1080px) {
+            width: 240px;
+        }
+        @media (max-width: 620px) {
+            width: 170px;
+            padding-top: 0;
+        }
     }
     &__text {
         font-size: 14px;
@@ -10,15 +20,32 @@
             font-size: 18px;
             color: #0084ff;
         }
+        @media (max-width: 810px) {
+            display: none;
+        }
+        @media (max-width: 540px) {
+            display: block;
+        }
     }
     &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 10px;
+        @media (max-width: 540px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 390px) {
+            grid-template-columns: 1fr;
+            width: fit-content;
+        }
     }
     &__img {
         margin-top: -7px;
+        @media (max-width: 940px) {
+            display: none;
+        }
     }
     &__btn {
         font-size: 16px;
@@ -28,6 +55,7 @@
         display: inline-block;
         background-color: #0084ff;
         border-radius: 30px;
+        width: fit-content;
     }
     &-language {
         font-size: 14px;
@@ -47,6 +75,14 @@
         display: flex;
         justify-content: center;
         gap: 60px;
+        @media (max-width: 750px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        @media (max-width: 390px) {
+            grid-template-columns: 1fr;
+        }
         li {
             position: relative;
             &:last-child {
@@ -63,6 +99,9 @@
                 height: 100%;
                 right: -29px;
                 top: 0;
+                @media (max-width: 750px) {
+                    display: none;
+                }
             }
             a {
                 display: flex;

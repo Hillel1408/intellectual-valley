@@ -17,6 +17,12 @@ html {
     line-height: 100%;
     font-weight: 700;
     color: #12234a;
+    @media (max-width: 780px) {
+        font-size: 40px;
+    }
+    @media (max-width: 540px) {
+        font-size: 32px;
+    }
 }
 .text {
     font-size: 18px;
@@ -41,6 +47,9 @@ html {
         background-color: #0084ff;
         border-radius: 60px;
         display: inline-block;
+        @media (max-width: 780px) {
+            padding: 32px 22px;
+        }
     }
     padding: 19px 25px;
     border-radius: 60px;

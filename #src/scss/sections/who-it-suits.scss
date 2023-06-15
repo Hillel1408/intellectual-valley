@@ -10,6 +10,12 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
         margin-bottom: 61px;
+        @media (max-width: 870px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 580px) {
+            grid-template-columns: 1fr;
+        }
         & > div {
             background-color: #009aff;
             padding: 30px 30px 50px 30px;

@@ -2,6 +2,7 @@
     padding-top: 45px;
     padding-bottom: 45px;
     background-image: url('../img/bg-2.png');
+    background-size: cover;
     &__title {
         color: white;
         text-align: center;
@@ -14,11 +15,19 @@
         margin-top: 73px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        @media (max-width: 970px) {
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        @media (max-width: 500px) {
+            grid-template-columns: 1fr;
+        }
         & > div {
             display: flex;
             flex-direction: column;
             gap: 30px;
             align-items: center;
+            position: relative;
             span {
                 font-size: 100px;
                 color: #0085ff;
@@ -31,6 +40,18 @@
                 color: white;
                 text-align: center;
                 max-width: 250px;
+            }
+            &:after {
+                content: url('../img/icon-48.png');
+                position: absolute;
+                top: 22px;
+                right: -15px;
+                @media (max-width: 970px) {
+                    display: none;
+                }
+            }
+            &:last-child:after {
+                display: none;
             }
         }
     }

@@ -5,13 +5,21 @@
         padding: 71px 98px 64px 98px;
         border-radius: 15px;
         background-image: url('../img/bg-3.png');
+        background-color: #0084ff;
         background-size: cover;
         background-position: right;
+        @media (max-width: 970px) {
+            background-image: none;
+            padding: 30px 20px;
+        }
         h3 {
             font-size: 30px;
             line-height: 40px;
             color: white;
             margin-bottom: 45px;
+            @media (max-width: 970px) {
+                font-size: 24px;
+            }
         }
         a {
             font-size: 24px;
