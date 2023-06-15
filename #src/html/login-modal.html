@@ -1,6 +1,28 @@
-<div class="modal">
+<div class="modal login-modal">
     <div class="modal-body">
         <div class="modal-content">
+            <span class="modal__close login-modal-close">
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M21 3L3 21"
+                        stroke="#9898A0"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                    />
+                    <path
+                        d="M3 3L21 21"
+                        stroke="#9898A0"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                    />
+                </svg>
+            </span>
             <span class="intro-form__title">Авторизация</span>
             <form action="#">
                 <div class="input">
@@ -11,7 +33,9 @@
                     <img src="img/icon-44.png" alt="" />
                     <input type="password" placeholder="Пароль" required />
                 </div>
-                <a href="#">Забыл пароль</a>
+                <a href="#" class="password-recovery-modal-open"
+                    >Забыл пароль</a
+                >
                 <button type="submit" class="intro-form__btn">Войти</button>
             </form>
         </div>
