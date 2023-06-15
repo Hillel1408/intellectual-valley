@@ -1,0 +1,28 @@
+.about-us {
+    padding-top: 70px;
+    padding-bottom: 80px;
+    &__title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        font-size: 30px;
+        line-height: 100%;
+        color: #12234a;
+        font-weight: 700;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    &-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 156px;
+        & > div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}

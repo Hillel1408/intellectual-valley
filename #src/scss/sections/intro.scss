@@ -1,0 +1,122 @@
+.intro {
+    padding-top: 106px;
+    padding-bottom: 70px;
+    background-image: url('../img/bg-4.png');
+    background-size: cover;
+    background-position: center;
+    &-container {
+        display: flex;
+        gap: 40px;
+    }
+    &__title {
+        font-size: 50px;
+        line-height: 100%;
+        color: white;
+        margin-bottom: 7px;
+        font-weight: 700;
+        span {
+            color: #ff6c00;
+        }
+        &-wrapper {
+            width: fit-content;
+            margin-bottom: 40px;
+        }
+        &-registration {
+            position: relative;
+            &::after {
+                content: url('../img/icon-45.png');
+                position: absolute;
+                bottom: -80px;
+                right: 0;
+            }
+        }
+    }
+    &-block {
+        font-size: 20px;
+        line-height: 100%;
+        color: white;
+        padding: 6px 41px;
+        background-color: #ff6c00;
+        border-radius: 10px;
+        width: fit-content;
+        margin-left: auto;
+    }
+    &-flex {
+        display: flex;
+        gap: 52px;
+        margin-bottom: 47px;
+        & > div {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: baseline;
+        }
+    }
+    &__subtitle {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 100%;
+        color: white;
+    }
+    &__text {
+        font-size: 20px;
+        line-height: 100%;
+        color: white;
+    }
+    &-form {
+        background-color: #e4ecf4;
+        border-radius: 10px;
+        padding: 30px 25px 33px 25px;
+        flex: 0 0 370px;
+        &-flex {
+            display: flex;
+            gap: 53px;
+            justify-content: center;
+        }
+        &__title {
+            font-size: 34px;
+            line-height: 100%;
+            color: #12234a;
+            font-weight: 700;
+            margin-bottom: 34px;
+            display: block;
+            text-align: center;
+        }
+        &__btn {
+            font-size: 22px;
+            font-weight: 700;
+            height: 100%;
+            color: white;
+            padding: 14px 43px;
+            display: inline-block;
+            background-color: #0084ff;
+            border-radius: 30px;
+            width: fit-content;
+            margin: 0 auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    &__custom-checkbox {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        &-2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            & > span {
+                margin-right: 9px;
+            }
+            & > a {
+                color: black;
+            }
+        }
+    }
+}
