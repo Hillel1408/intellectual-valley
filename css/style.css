@@ -386,13 +386,7 @@ html {
   margin: 0 auto;
 }
 
-@media (max-width: 620px) {
-  .header {
-    padding-top: 13px;
-  }
-}
 .header__logo {
-  padding-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,6 +509,8 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 @media (max-width: 540px) {
   .header__container {
@@ -536,7 +532,7 @@ html {
   }
 }
 .header__img {
-  margin-top: -10px;
+  margin-top: -25px;
 }
 @media (max-width: 940px) {
   .header__img {
@@ -590,7 +586,7 @@ html {
 }
 .header-language-tooltip {
   position: absolute;
-  top: 60px;
+  top: 70px;
   z-index: 1;
   background-color: white;
   padding: 5px;
@@ -632,7 +628,6 @@ html {
   padding-top: 12px;
   padding-bottom: 12px;
   background-color: #0084ff;
-  margin-top: 15px;
 }
 .header-list {
   display: -webkit-box;
@@ -907,7 +902,8 @@ html {
 }
 .intro__custom-checkbox-2 > i a {
   color: black;
-  text-decoration: underline;
+  display: inline-block;
+  border-bottom: 1px solid black;
 }
 
 .how-it-works {
@@ -1728,6 +1724,22 @@ html {
 .work-with-us__title span {
   color: #0084ff;
 }
+.work-with-us-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 39px;
+}
+@media (max-width: 420px) {
+  .work-with-us-flex {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 .work-with-us-grid {
   display: -ms-grid;
   display: grid;
@@ -1735,7 +1747,7 @@ html {
   grid-template-columns: 1fr 1fr;
   gap: 37px;
 }
-@media (max-width: 620px) {
+@media (max-width: 740px) {
   .work-with-us-grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -1751,8 +1763,12 @@ html {
   font-size: 30px;
   color: white;
   line-height: 100%;
-  margin-top: 21px;
   font-weight: 700;
+}
+@media (max-width: 1020px) {
+  .work-with-us-grid > div h3 {
+    font-size: 24px;
+  }
 }
 @media (max-width: 620px) {
   .work-with-us-grid > div h3 {
