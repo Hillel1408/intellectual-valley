@@ -15,6 +15,7 @@
         h3 {
             font-size: 30px;
             line-height: 40px;
+            font-weight: 700;
             color: white;
             margin-bottom: 45px;
             @media (max-width: 970px) {
@@ -29,6 +30,10 @@
             padding: 19px 54px;
             border: 2px solid white;
             border-radius: 35px;
+            transition: 0.3s;
+            &:hover {
+                background-color: darken(#0084ff, 10%);
+            }
         }
     }
 }

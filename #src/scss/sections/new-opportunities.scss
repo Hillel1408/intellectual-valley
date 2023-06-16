@@ -92,7 +92,6 @@
                     line-height: 100%;
                 }
                 p {
-                    max-width: 250px;
                     @media (max-width: 980px) {
                         max-width: none;
                     }
@@ -184,13 +183,16 @@
                 font-size: 40px;
                 line-height: 100%;
                 font-weight: 700;
-                margin-bottom: 50px;
+                margin-bottom: 30px;
                 span {
                     color: #d33e3e;
                 }
                 @media (max-width: 760px) {
                     font-size: 32px;
                 }
+            }
+            P {
+                line-height: 120%;
             }
         }
         &:not(:last-child) {

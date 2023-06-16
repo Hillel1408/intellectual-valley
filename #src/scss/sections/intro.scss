@@ -112,6 +112,10 @@
             border-radius: 30px;
             width: fit-content;
             margin: 0 auto;
+            transition: 0.3s;
+            &:hover {
+                background-color: darken(#0084ff, 10%);
+            }
         }
         form {
             display: flex;
@@ -133,8 +137,13 @@
             & > span {
                 margin-right: 9px;
             }
-            & > a {
-                color: black;
+            & > i {
+                font-style: inherit;
+                font-size: 14px;
+                a {
+                    color: black;
+                    text-decoration: underline;
+                }
             }
         }
     }
