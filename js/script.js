@@ -31,3 +31,22 @@ passwordRecoveryModalClose.addEventListener('click', () => {
     passwordRecoveryModal.classList.toggle('open');
     document.body.classList.toggle('lock');
 });
+
+const newOpportunitiesBtn = document.querySelectorAll(
+    '.new-opportunities-flex__btn'
+);
+
+newOpportunitiesBtn.forEach((item) => {
+    item.addEventListener('click', function () {
+        const elem = this.previousElementSibling;
+        if (elem.style.display === 'block') {
+            elem.style.display = '-webkit-box';
+            this.innerText = 'Развернуть';
+            this.classList.toggle('active');
+        } else {
+            elem.style.display = 'block';
+            this.innerText = 'Свернуть';
+            this.classList.toggle('active');
+        }
+    });
+});

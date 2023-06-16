@@ -1197,6 +1197,32 @@ html {
   gap: 40px;
   position: relative;
 }
+.new-opportunities-flex__btn {
+  margin-top: 10px;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #12234a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+.new-opportunities-flex__btn::after {
+  content: url("../img/icon-51.png");
+  -webkit-transform: rotate(180deg) translateY(-2px);
+      -ms-transform: rotate(180deg) translateY(-2px);
+          transform: rotate(180deg) translateY(-2px);
+}
+.new-opportunities-flex__btn.active::after {
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
 @media (max-width: 760px) {
   .new-opportunities-flex {
     -webkit-box-orient: vertical;
