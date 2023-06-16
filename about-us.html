@@ -178,6 +178,95 @@
     </div>
 </footer>
 
+        <div class="modal password-recovery-modal">
+    <div class="modal-body">
+        <div class="modal-content">
+            <span class="modal__close password-recovery-modal-close">
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M21 3L3 21"
+                        stroke="#9898A0"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                    />
+                    <path
+                        d="M3 3L21 21"
+                        stroke="#9898A0"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                    />
+                </svg>
+            </span>
+            <span class="intro-form__title" style="font-size: 24px"
+                >Восстановление пароля</span
+            >
+            <form action="#">
+                <p class="modal__text">
+                    Введите Ваш E-mail указанный <br />
+                    при регистрации
+                </p>
+                <div class="input">
+                    <img src="img/icon-43.png" alt="" />
+                    <input type="email" placeholder="Ваш e-mail" required />
+                </div>
+                <button type="submit" class="intro-form__btn">
+                    Сброс пароля
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+        <div class="modal login-modal">
+    <div class="modal-body">
+        <div class="modal-content">
+            <span class="modal__close login-modal-close">
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M21 3L3 21"
+                        stroke="#9898A0"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                    />
+                    <path
+                        d="M3 3L21 21"
+                        stroke="#9898A0"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                    />
+                </svg>
+            </span>
+            <span class="intro-form__title">Авторизация</span>
+            <form action="#">
+                <div class="input">
+                    <img src="img/icon-43.png" alt="" />
+                    <input type="email" placeholder="Ваш e-mail" required />
+                </div>
+                <div class="input">
+                    <img src="img/icon-44.png" alt="" />
+                    <input type="password" placeholder="Пароль" required />
+                </div>
+                <a href="#" class="password-recovery-modal-open"
+                    >Забыл пароль</a
+                >
+                <button type="submit" class="intro-form__btn">Войти</button>
+            </form>
+        </div>
+    </div>
+</div>
+
         <script src="https://unpkg.com/imask"></script>
         <script src="js/script.js"></script>
     </body>
