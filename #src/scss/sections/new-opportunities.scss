@@ -115,6 +115,26 @@
         justify-content: space-between;
         gap: 40px;
         position: relative;
+        &__btn {
+            margin-top: 10px;
+            background-color: transparent;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 100%;
+            color: #12234a;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            &::after {
+                content: url('../img/icon-51.png');
+                transform: rotate(180deg) translateY(-2px);
+            }
+            &.active {
+                &::after {
+                    transform: translateY(-2px);
+                }
+            }
+        }
         @media (max-width: 760px) {
             flex-direction: column;
         }
